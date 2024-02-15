@@ -13,17 +13,14 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
 import com.study.product.dao.ProductDao;
-import com.study.product.entity.Product;
 
 
 @WebServlet("/products")
 public class SearchProductServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-
     public SearchProductServlet() {
-        super();
-        
+        super();        
     }
 
 
@@ -31,12 +28,12 @@ public class SearchProductServlet extends HttpServlet {
 		System.out.println("조회 요청 들어옴");
 		
 		ProductDao productDao = ProductDao.getInstance();
-		List<Product> products = productDao.getProductListAll();
+//		List<Product> products = productDao.getProductListAll();
 		
 		Gson gson = new Gson();
 		
 		Map<String, Object> responseMap = new HashMap<>();
-		responseMap.put("data", products);
+//		responseMap.put("data", products);
 		
 		response.setStatus(200);
 		response.setContentType("application/json");
