@@ -1,4 +1,4 @@
-package com.study.product.service;
+package com.study.product.dto;
 
 import lombok.Builder;
 import lombok.Data;
