@@ -8,7 +8,7 @@ import lombok.Data;
 public class InsertUserReqDto {
 	
 	private String username;
-	private String paswword;
+	private String password;
 	private String name;
 	private String email;
 

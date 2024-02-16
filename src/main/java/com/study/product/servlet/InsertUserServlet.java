@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.study.product.dto.InsertUserReqDto;
 import com.study.product.utils.RequestUtil;
+import com.study.product.utils.ResponseEntity;
 
 
 @WebServlet("/user")
@@ -27,6 +28,7 @@ public class InsertUserServlet extends HttpServlet {
 		InsertUserReqDto dto = RequestUtil.convertJsonData(request, InsertUserReqDto.class);
 		
 		System.out.println(dto);
+		ResponseEntity.ofJson(response, 200, dto);
 	}
 
 }
