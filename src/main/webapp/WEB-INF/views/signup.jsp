@@ -22,6 +22,7 @@
 	<input type="email" placeholder="email"> 
 	
 	<button onclick="handleSignupSubmit();">회원가입</button>
+	<img alt="" src="/product/hellotest/java.png">
 	
 	<script src="/product/static/js/signup.js"></script>
 	

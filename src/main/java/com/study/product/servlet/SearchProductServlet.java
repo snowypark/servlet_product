@@ -42,8 +42,5 @@ public class SearchProductServlet extends HttpServlet {
 //		response.getWriter().println(gson.toJson(responseMap));
 		
 	}
-
-
-
-
+	
 }
